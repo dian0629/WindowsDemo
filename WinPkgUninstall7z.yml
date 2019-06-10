@@ -1,0 +1,9 @@
+---
+- name: UNINSTALL 7-ZIP VIA WIN_PACKAGE MODULE
+  hosts: all
+  
+  tasks:
+    - name: Ensure 7-zip is not installed
+      win_package:
+        path: c:\temp\7z.msi
+        state: absent
