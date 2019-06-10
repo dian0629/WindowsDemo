@@ -1,0 +1,12 @@
+---
+- name: VERIFY A SERVICE IS RUNNING
+  hosts: all
+  
+  tasks:
+    - name: check the print spooler service
+      win_service:
+        name: Spooler
+        username: LocalSystem
+        password: ""
+        state: started
+        start_mode: auto
