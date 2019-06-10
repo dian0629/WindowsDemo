@@ -1,0 +1,7 @@
+---
+- name: PING WINDOWS HOSTS
+  hosts: all 
+
+  tasks:
+  - name: ping
+    win_ping:
