@@ -1,2 +1,3 @@
 #Install from Galaxy
 - src: wardcomm.windows_update
+- src: deekayen.chocolatey
