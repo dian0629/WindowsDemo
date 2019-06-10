@@ -1,6 +1,7 @@
 ---
 - name: TEST RAW MODULE
-  hosts: all 
+  hosts: all
+  gather_facts: false
   
   tasks:
     - name: run ipconfig
@@ -12,6 +13,7 @@
 
 - name: TEST STAT MODULE
   hosts: all
+  gather_facts: false
   
   tasks:
     - name: test stat module on file
