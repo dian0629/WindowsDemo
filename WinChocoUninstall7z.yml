@@ -1,0 +1,9 @@
+---
+- name: ENSURE 7-ZIP IS NOT INSTALLED VIA CHOCOLATELY PACKAGE MANAGER
+  hosts: all
+  
+  tasks:
+    name: Ensure 7-zip is not installed
+    win_chocolately:
+      name: 7zip
+      state: absent
