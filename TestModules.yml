@@ -3,7 +3,7 @@
   hosts: all 
   tasks:
     - name: run ipconfig
-      raw: ipconfig /all
+      raw: ipconfig
       register: ipconfig
     - debug: var=ipconfig
 
@@ -15,11 +15,3 @@
       register: stat_file
 
     - debug: var=stat_file
-
-    - name: check stat_file result
-      assert:
-          that:
-             - "stat_file.stat.exists"
-             - "not stat_file.stat.isdir"
-             - "stat_file.stat.size > 0"
-             - "stat_file.stat.md5"
