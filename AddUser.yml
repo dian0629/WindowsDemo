@@ -1,0 +1,10 @@
+---
+- name: ADD LOCAL USER ACCOUNT
+  hosts: all
+  
+  tasks:
+    - name: Add User
+      win_user:
+        name: "{{ win_local_user }}"
+        password: "{{ win_local_user_pass }}"
+        state: present
