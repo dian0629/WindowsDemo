@@ -1,5 +1,5 @@
 ---
-- name: INSTALL 7-Zip via Chocolately Package Manager
+- name: DOWNLOAD AND INSTALL 7-ZIP VIA WIN_PACKAGE MODULE
 - hosts: all
 
   tasks:
@@ -7,7 +7,7 @@
       win_get_url: https://www.7-zip.org/a/7z1900-x64.msi
       dest: C:\temp\7z.msi
       
-    - name: Ensure 7-Zip is installed via win_package module
+    - name: Ensure 7-Zip is installed
       win_package:
         path: c:\temp\7z.msi
         state: present
