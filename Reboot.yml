@@ -11,4 +11,4 @@
     - name: Validate that the netlogon service has started
       win_reboot:
         msg:
-        test_command: 'exit (Get-Service -Name Netlogon).Status -ne "Running"'
+        #test_command: 'exit (Get-Service -Name Netlogon).Status -ne "Running"'
