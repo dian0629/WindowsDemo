@@ -1,0 +1,9 @@
+---
+- name: UNINSTALL FROM MSI
+  hosts: all
+  
+  tasks:
+    - name: Uninstall AWS PV Driver
+      win_package:
+        path: 'C:\ProgramData\ZertoTools\Platform\AWS\Zerto-PvDriver\AWSPVDriverSetup.msi'
+        state: absent
