@@ -1,0 +1,6 @@
+---
+- name: REBOOT WINDOWS SERVER
+  hosts: all
+  
+  tasks:
+    - win_reboot:
