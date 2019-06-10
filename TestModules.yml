@@ -3,7 +3,7 @@
   hosts: all 
   tasks:
     - name: run ipconfig
-      raw: ipconfig
+      raw: ipconfig /all
       register: ipconfig
     - debug: var=ipconfig
 
