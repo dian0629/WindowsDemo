@@ -10,5 +10,5 @@
 
     - name: Validate that the netlogon service has started
       win_reboot:
-        msg:
+        msg: "Reboot initiated by Ansible"
         #test_command: 'exit (Get-Service -Name Netlogon).Status -ne "Running"'
