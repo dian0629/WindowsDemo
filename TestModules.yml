@@ -8,7 +8,7 @@
     - debug: var=ipconfig
 
 - name: TEST STAT MODULE
-  hosts: windows
+  hosts: all
   tasks:
     - name: test stat module on file
       win_stat: path="C:/Windows/win.ini"
