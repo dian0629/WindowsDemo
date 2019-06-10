@@ -8,7 +8,7 @@
         name: WinRM
         start_mode: delayed
 
-    - name: Validate that the netlogon service has started
+    - name: Reboot the server
       win_reboot:
         msg: "Reboot initiated by Ansible"
         pre_boot_delay: 60
