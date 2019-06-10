@@ -3,9 +3,6 @@
   hosts: all
   
   tasks:
-    - name: Reboot server
-      win_reboot:
-
     - name: Ensure WinRM starts when the system has settled and is ready to work reliably
       win_service:
         name: WinRM
@@ -13,4 +10,5 @@
 
     - name: Validate that the netlogon service has started
       win_reboot:
+        msg:
         test_command: 'exit (Get-Service -Name Netlogon).Status -ne "Running"'
