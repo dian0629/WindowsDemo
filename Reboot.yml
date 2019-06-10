@@ -3,7 +3,7 @@
   hosts: all
   
   tasks:
-    - name: Ensure WinRM starts when the system has settled and is ready to work reliably
+    - name: Set WinRM service to delayed start
       win_service:
         name: WinRM
         start_mode: delayed
