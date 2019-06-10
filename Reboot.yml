@@ -3,7 +3,7 @@
   hosts: all
   
   tasks:
-    - Reboot server
+    - name: Reboot server
       win_reboot:
 
     - name: Ensure WinRM starts when the system has settled and is ready to work reliably
