@@ -4,6 +4,6 @@
   
   tasks:
     - name: Uninstall 7-zip
-      win_chocolately:
+      win_chocolatey:
         name: 7zip
         state: absent
