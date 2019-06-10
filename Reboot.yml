@@ -11,5 +11,5 @@
     - name: Reboot the server
       win_reboot:
         msg: "Reboot initiated by Ansible"
-        pre_boot_delay_sec: 60
+        pre_boot_delay_sec: 120
         test_command: "whoami"
