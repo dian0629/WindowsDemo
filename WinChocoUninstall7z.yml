@@ -3,7 +3,7 @@
   hosts: all
   
   tasks:
-    name: Ensure 7-zip is not installed
+    name: Uninstall 7-zip
     win_chocolately:
       name: 7zip
       state: absent
