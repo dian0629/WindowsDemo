@@ -1,6 +1,6 @@
 ---
 - name: DOWNLOAD AND INSTALL 7-ZIP VIA WIN_PACKAGE MODULE
-- hosts: all
+  hosts: all
 
   tasks:
     - name: Download the 7-Zip package
