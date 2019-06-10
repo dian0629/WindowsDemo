@@ -12,4 +12,6 @@
       win_reboot:
         msg: "Reboot initiated by Ansible"
         pre_reboot_delay: 60
-        test_command: "whoami"
+    
+    - name: Run a command to verify connectivity
+      win_command: whoami.exe
