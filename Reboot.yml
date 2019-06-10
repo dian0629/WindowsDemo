@@ -11,4 +11,5 @@
     - name: Validate that the netlogon service has started
       win_reboot:
         msg: "Reboot initiated by Ansible"
-        #test_command: 'exit (Get-Service -Name Netlogon).Status -ne "Running"'
+        pre_boot_delay: 60
+        test_command: "whoami"
