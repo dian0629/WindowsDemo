@@ -15,5 +15,7 @@
     
     - name: Run a command to verify connectivity
       win_command: whoami.exe
-      register: iam
+      register: whoiam
       
+    - name: Output hostname
+      debug: var=whoiam  
