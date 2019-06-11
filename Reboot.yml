@@ -17,5 +17,5 @@
       win_command: whoami.exe
       register: whoiam
       
-    - name: Output hostname
+    - name: Output whoami
       debug: var=whoiam  
