@@ -15,3 +15,5 @@
     
     - name: Run a command to verify connectivity
       win_command: whoami.exe
+      register: iam
+      
