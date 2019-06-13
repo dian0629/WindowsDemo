@@ -1,4 +1,2 @@
 #Install from Galaxy
-- src: wardcomm.windows_update
 - src: deekayen.chocolatey
-- src: trondhindenes.win_reboot
