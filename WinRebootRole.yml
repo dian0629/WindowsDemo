@@ -1,9 +1,0 @@
----
-- name: Call Win_Reboot role
-  hosts: all
-  
-  roles:
-    - role: trondhindenes.win_reboot
-  
-  vars:
-    winreboot_simulate: yes
