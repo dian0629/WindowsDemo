@@ -3,7 +3,7 @@
 - hosts: all
   
   roles:
-    - role: dian0629.win_reboot
+    - role: trondhindenes.win_reboot
   
   vars:
     winreboot_simulate: yes
