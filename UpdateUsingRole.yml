@@ -1,6 +1,0 @@
----
-- name: INSTALL WINDOWS UPDATES
-  hosts: all
-  
-  roles:
-    - wardcomm.windows_update
