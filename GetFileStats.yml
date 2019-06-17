@@ -1,0 +1,11 @@
+- name: TEST STAT MODULE
+  hosts: all
+  gather_facts: false
+  
+  tasks:
+    - name: use stat module to gather file statistics
+      win_stat: path="C:/Windows/win.ini"
+      register: stat_file
+
+    - name: show file stats
+      debug: var=stat_file
