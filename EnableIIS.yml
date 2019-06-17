@@ -1,6 +1,6 @@
 ---
 - name: INSTALL IIS ON WINDOWS HOST 
-  hosts: all
+  hosts: web
   gather_facts: false
   
   tasks:
