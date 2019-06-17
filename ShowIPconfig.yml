@@ -1,0 +1,12 @@
+---
+- name: TEST RAW MODULE
+  hosts: all
+  gather_facts: false
+  
+  tasks:
+    - name: run ipconfig
+      raw: ipconfig
+      register: ipconfig
+  
+    - name: show ipconfig
+      debug: var=ipconfig
