@@ -16,12 +16,8 @@
     - name: reboot the server
       win_reboot:
         msg: "Reboot initiated by Ansible. You have 1 minute to save your work."
-        pre_reboot_delay: 60
-    
-    - name: get boot time
-      debug:
-        msg: "{{ ansible_lastboot }}"
-        
+        pre_reboot_delay: 60        
+       
     - name: start the service if required
       win_service:
         name: Spooler
@@ -31,3 +27,11 @@
     - name: verify the service state
       debug:
         var: service.state
+
+- name: DISPLAY BOOT TIME
+  hosts: all
+  
+  tasks:
+    - name: get boot time
+      debug:
+        msg: "{{ ansible_lastboot }}"
