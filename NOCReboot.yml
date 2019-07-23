@@ -2,7 +2,7 @@
 - name: STOP SERVICES / REBOOT SERVER / VERIFY SERVICES
   hosts: all
   
-  tasks:
+  tasks:  
     - name: stop the print spooler
       win_service:
         name: Spooler
@@ -17,6 +17,10 @@
       win_reboot:
         msg: "Reboot initiated by Ansible. You have 1 minute to save your work."
         pre_reboot_delay: 60
+    
+    - name: get boot time
+      debug:
+        msg: "{{ ansible_lastboot }}"
         
     - name: start the service if required
       win_service:
