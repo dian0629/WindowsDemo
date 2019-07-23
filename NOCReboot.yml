@@ -1,0 +1,13 @@
+---
+- name: STOP SERVICES
+  hosts: all
+  
+  tasks:
+    - name: stop the print spooler
+      win_service:
+        name: Spooler
+        state: stopped
+      register: service
+    
+    - debug:
+        msg: service
