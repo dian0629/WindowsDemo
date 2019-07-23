@@ -24,6 +24,6 @@
         state: started
       register: service
       
-    - name:
+    - name: verify the service state
       debug:
         var: service:state
