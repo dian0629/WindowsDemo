@@ -1,4 +1,0 @@
----
-- name: GATHER FACTS
-  hosts: all
-  

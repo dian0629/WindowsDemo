@@ -1,0 +1,13 @@
+---
+- name: GATHER FACTS
+  hosts: all
+  
+  tasks:
+    - name: display boot time
+      debug:
+        msg: "{{ ansible_lastboot }}"
+        
+    - name: check if reboot pending
+      debug:
+        msg: "{{ ansible_reboot_pending }}"
+  
