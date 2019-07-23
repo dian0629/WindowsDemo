@@ -26,4 +26,4 @@
       
     - name: verify the service state
       debug:
-        var: service:state
+        var: service.state
