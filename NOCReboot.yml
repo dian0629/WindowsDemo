@@ -15,7 +15,7 @@
         
     - name: reboot the server
       win_reboot:
-        msg: "Reboot initiated by Ansible"
+        msg: "Reboot initiated by Ansible. You have 1 minute to save your work."
         pre_reboot_delay: 60
         
     - name: start the service if required
