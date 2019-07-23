@@ -10,4 +10,4 @@
       register: service
     
     - debug:
-        msg: service
+        var: service
