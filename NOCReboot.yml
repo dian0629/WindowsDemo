@@ -10,4 +10,4 @@
       register: service
     
     - debug:
-        var: service
+        var: service.state
