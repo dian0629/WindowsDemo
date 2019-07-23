@@ -1,5 +1,5 @@
 ---
-- name: STOP SERVICES
+- name: STOP SERVICES / REBOOT SERVER / VERIFY SERVICES
   hosts: all
   
   tasks:
