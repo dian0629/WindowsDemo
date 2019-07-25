@@ -8,5 +8,5 @@
         port: 25
         to: SDE
         subject: RSL
-        body: [ "{{ hostname }}" ]  <Emergency Reboot>
+        body: [ "{{ ansible_hostname }}" ]  <Emergency Reboot>
       delegate_to: localhost
