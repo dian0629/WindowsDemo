@@ -6,3 +6,8 @@
     - name:
       win_shell:
         get-hotfix KB4507460
+      register: results
+      
+    - name:
+      debug:
+        var: results
