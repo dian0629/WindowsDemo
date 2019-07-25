@@ -6,7 +6,7 @@
     - mail:
         host: mail.nortonhealthcare.org
         port: 25
-        to: SDE
+        to: dian.zimmerman@nortonhealthcare.org
         subject: RSL
-        body: [ "{{ ansible_hostname }}" ]  <Emergency Reboot>
+        body: "[ "{{ ansible_hostname }}" ]  <Emergency Reboot>"
       delegate_to: localhost
