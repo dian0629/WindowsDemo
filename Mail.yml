@@ -7,6 +7,6 @@
         host: mail.nortonhealthcare.org
         port: 25
         to: dian.zimmerman@nortonhealthcare.org
-        subject: RSL
-        body: "[otwv1061]  <Emergency Reboot>"
+        subject: Test email from ansible with body
+        body: testing the mail module
       delegate_to: localhost
