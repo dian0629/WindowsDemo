@@ -1,7 +1,0 @@
----
-- name: VERIFY WINDOWS PATCHES
-  hotst: all
- 
-  tasks:
-    - name: 
-      win_shell: get-hotfix {{ kbitem }}
