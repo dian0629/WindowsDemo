@@ -5,7 +5,7 @@
   tasks:
     - name:
       win_shell:
-        get-hotfix KB4507460
+        get-hotfix {{ kb_id }}
       register: results
       
     - name:
