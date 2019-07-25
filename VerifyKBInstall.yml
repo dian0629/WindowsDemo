@@ -10,4 +10,4 @@
       
     - name:
       debug:
-        var: results.std_out
+        var: results
