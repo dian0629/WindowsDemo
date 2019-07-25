@@ -1,0 +1,11 @@
+---
+- name: VERIFY WINDOWS PATCHES
+  hotst: all
+  any_errors_fatal: false
+  serial:
+    - 100%
+  max_fail_percentage: 10%
+  
+  tasks:
+    - name: 
+      win_shell: get-hotfix {{ kbitem }}
