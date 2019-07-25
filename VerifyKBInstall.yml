@@ -1,0 +1,8 @@
+---
+- name:
+  hosts: all
+  
+  tasks:
+    - name:
+      win_shell:
+        get-hotfix KB4507460
