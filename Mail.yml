@@ -9,4 +9,5 @@
         to: dian.zimmerman@nortonhealthcare.org
         subject: Test email from ansible with body
         body: testing the mail module
+        secure: always
       delegate_to: localhost
