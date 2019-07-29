@@ -1,0 +1,3 @@
+---
+- name: GATHER ANSIBLE FACTS
+  hosts: all
