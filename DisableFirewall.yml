@@ -1,0 +1,9 @@
+---
+- name: DISABLE WINDOWS FIREWALL
+  hosts: all
+  
+  tasks:
+    - name: disable private firewall
+      win_firewall:
+        state: disabled
+        profiles: Private
