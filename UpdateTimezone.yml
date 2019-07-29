@@ -5,4 +5,4 @@
   tasks:
     - name: set timezone to 'Eastern Time' (GMT-05:00)
       win_timezone:
-        timezone: Eastern Time
+        timezone: Eastern Standard Time
