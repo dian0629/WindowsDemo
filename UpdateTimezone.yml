@@ -3,6 +3,6 @@
   hosts: all
   
   tasks:
-    - name: set timezone to 'Central Standard Time' (GMT-06:00)
+    - name: set timezone to 'Eastern Time' (GMT-05:00)
       win_timezone:
-        timezone: Central Standard Time
+        timezone: Eastern Time
