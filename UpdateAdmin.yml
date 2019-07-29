@@ -6,6 +6,6 @@
     - name: update password using win_user module
       win_user:
         name: Administrator
-        password: ;sdakflghj
+        password: Ans!bl3R3s3t
         state: present
         update_password: always
