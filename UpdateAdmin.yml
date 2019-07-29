@@ -1,0 +1,11 @@
+---
+- name: UPDATE WIN ADMIN PASSWORD
+  hosts: all
+  
+  tasks:
+    - name: update password using win_user module
+      win_user:
+        name: Administrator
+        password: ;sdakflghj
+        state: present
+        update_password: always
