@@ -6,7 +6,7 @@
     - name:
       slack:
         domain: thethingsandstuff.slack.com
-        token: "hcGOTmGEcvb4gODAsdPLYRyH"
-        channel: "#ansible"
+        token: hcGOTmGEcvb4gODAsdPLYRyH
+        channel: #ansible
         msg: "This is a test message sent from ansible"
-        color: good
+
