@@ -1,0 +1,11 @@
+---
+- name: RUN NETSTAT USING win_command MODULE
+  hosts: all
+  
+  tasks:
+    - name: run netstat
+      win_command: netstat -e
+      register: netstat
+      
+    - debug:
+        var: netstat
