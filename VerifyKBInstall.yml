@@ -1,13 +1,13 @@
 ---
-- name:
+- name: VERIFY A PATCH IS INSTALLED
   hosts: all
   
   tasks:
-    - name:
+    - name: use win_shell module to call a powershell command
       win_shell:
         get-hotfix {{ kb_id }}
       register: results
       
-    - name:
-      debug:
+    - name: display results
+      debug: 
         var: results.stdout
